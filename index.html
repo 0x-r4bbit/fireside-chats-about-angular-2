@@ -245,8 +245,9 @@ class FiresideChatsApp {
 </code></pre>
           <aside class="notes">
             <ul>
-              <li>Here's what a very simple ng 2 app looks like</li>
-              <li>We have imports, a class but it doesn't have any meaning</li>
+              <li>We start with a class</li>
+              <li>This is just a class, it doesn't have any special meaning</li>
+              <li>How can we make it a component?</li>
             </ul>
           </aside>
         </section>
@@ -272,7 +273,8 @@ class FiresideChatsApp {
 </code></pre>
           <aside class="notes">
             <ul>
-              <li>this is where annotations come into play</li>
+              <li>Angular 2 uses the concept of annotations</li>
+              <li>They add meta data to a class</li>
             </ul>
           </aside>
         </section>
@@ -296,6 +298,12 @@ class FiresideChatsApp {
   }
 }
 </code></pre>
+          <aside class="notes">
+            <ul>
+              <li>So why and how do those annotations work?</li>
+              <li>NOT part of the language</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
@@ -332,6 +340,8 @@ SomeClass.annotations = [new Annotation()];
             <ul>
               <li>What is Traceur?</li>
               <li>Traceur transpiles AtScript annotations to this</li>
+              <li>But Angular will be written in TypeScript?</li>
+              <li>Are they supported there too?</li>
             </ul>
           </aside>
         </section>
@@ -422,7 +432,7 @@ class FiresideChatsApp {
 
         <section>
           <h2>Chatter Card Component</h2>
-          <img style="border: none; box-shadow: none; background: none;" src="img/app.png">
+          <img style="border: none; box-shadow: none; background: none; height: 500px;" src="img/chatter-card.png">
           <aside class="notes">
             <ul>
               <li>Of course, "hello World" is not interesting</li>
@@ -670,8 +680,7 @@ class ChatterCard {
 
           <aside class="notes">
             <ul>
-              <li></li>
-              <li></li>
+              <li>We sill need to tell our component to reflect changes to the property</li>
             </ul>
           </aside>
         </section>
@@ -694,7 +703,6 @@ class ChatterCard {
           <aside class="notes">
             <ul>
               <li></li>
-              <li></li>
             </ul>
           </aside>
         </section>
@@ -704,7 +712,7 @@ class ChatterCard {
           <img style="border: none; box-shadow: none; background: none; height: 500px;" src="img/chatter-card.png">
           <aside class="notes">
             <ul>
-              <li>We forget soemthing</li>
+              <li>We forgot soemthing</li>
             </ul>
           </aside>
         </section>
