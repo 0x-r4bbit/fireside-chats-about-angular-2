@@ -225,11 +225,11 @@ let mercedes = new Convertible('Mercedes');
         </section>
 
         <section>
-          <pre style="font-size: 0.8em; margin-top: 1.8em; box-shadow: none; "><code style="padding: 1em; border-radius: 0.3em;max-height: 500px;">import {
-  bootstrap,
-  Component,
-  View
-} from 'angular2/angular2'
+          <pre style="font-size: 0.8em; margin-top: 1.8em; box-shadow: none; "><code style="padding: 1em; border-radius: 0.3em;max-height: 500px;">
+
+
+
+
 
 
 
@@ -247,6 +247,32 @@ class FiresideChatsApp {
             <ul>
               <li>Here's what a very simple ng 2 app looks like</li>
               <li>We have imports, a class but it doesn't have any meaning</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <pre style="font-size: 0.8em; margin-top: 1.8em; box-shadow: none; "><code style="padding: 1em; border-radius: 0.3em;max-height: 500px;">
+
+
+
+
+
+@Component({
+  selector: 'fireside-chats-app'
+})
+@View({
+  template: '<h1>{{name}}</h1>'
+})
+class FiresideChatsApp {
+  constructor() {
+    this.name = 'Fireside Chats';
+  }
+}
+</code></pre>
+          <aside class="notes">
+            <ul>
+              <li>this is where annotations come into play</li>
             </ul>
           </aside>
         </section>
@@ -270,11 +296,6 @@ class FiresideChatsApp {
   }
 }
 </code></pre>
-          <aside class="notes">
-            <ul>
-              <li>this is where annotations come into play</li>
-            </ul>
-          </aside>
         </section>
 
         <section>
